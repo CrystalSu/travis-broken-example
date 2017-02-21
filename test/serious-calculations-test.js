@@ -4,10 +4,10 @@ var assert = require('assert'),
 
 vows.describe('serious-calculations').addBatch({
   'When performing serious calculations': {
-    topic: test1.performSeriousCalculations(4),
+    topic: test1.plus_one(4),
     'result should be valid': function (result) {
       assert.isNumber(result);
-      assert.equal(result, 8);
+      assert.equal(result, 5);
     }
   }
 }).export(module);
