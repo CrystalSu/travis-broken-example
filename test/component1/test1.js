@@ -1,7 +1,7 @@
-exports.performSeriousCalculations = function (x) {
+exports.plus_one = function (x) {
   //
   // Perform very serious calculations on very important data.
   //
-  return 3 * x;
+  return 1 + x;
 };
 
