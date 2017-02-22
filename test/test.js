@@ -1,7 +1,6 @@
 var assert = require('assert'),
     vows = require('vows'),
-    test1 = require('./test1'),
-    lib = require('../');
+    test1 = require('./test1');
 
 vows.describe('test').addBatch({
   'When performing test1': {

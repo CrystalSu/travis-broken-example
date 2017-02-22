@@ -1,4 +1,4 @@
-var component1 = require('component1');
+var component1 = require('../lib/component1');
 
 exports.test = function (x) {
   //
