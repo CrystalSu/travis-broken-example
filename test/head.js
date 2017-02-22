@@ -22,7 +22,7 @@ vows.describe('test').addBatch({
   */
   'When performing test2': {
 	    topic: test2.test(3),
-	    'test is expected to pass   ': function (result) {
+	    'test is expected to pass ': function (result) {
 	      assert.isNumber(result);
 	      assert.equal(result, 8);
 	    }
