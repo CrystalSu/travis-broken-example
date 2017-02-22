@@ -3,7 +3,7 @@ var assert = require('assert'),
     test1 = require('./test1');
     test2 = require('./test2');
 
-vows.describe('test').addBatch({
+vows.describe('tests').addBatch({
   'When performing test1': {
     topic: test1.test(2),
     'test is expected to pass': function (result) {
@@ -22,7 +22,7 @@ vows.describe('test').addBatch({
   */
   'When performing test2': {
 	    topic: test2.test(3),
-	    'test is expected to pass ': function (result) {
+	    'test is expected to pass': function (result) {
 	      assert.isNumber(result);
 	      assert.equal(result, 8);
 	    }
