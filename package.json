@@ -10,7 +10,7 @@
     "url": "git://github.com/travis-ci/travis-ci-node.js-example.git"
   },
   "scripts": {
-    "test": "vows --spec"
+    "test": "vows"
   },
   "engines": {
     "node": ">= 0.4"
