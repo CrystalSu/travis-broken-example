@@ -1,7 +1,9 @@
-exports.plus_one = function (x) {
+var component1 = require('component1');
+
+exports.test = function (x) {
   //
-  // Perform very serious calculations on very important data.
+  // call the component to be tested
   //
-  return 1 + x;
+  return 1 + component1.doubleIt(x);
 };
 

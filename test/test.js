@@ -4,9 +4,9 @@ var assert = require('assert'),
     lib = require('../');
 
 vows.describe('test').addBatch({
-  'When performing serious calculations': {
-    topic: test1.plus_one(4),
-    'result should be valid': function (result) {
+  'When performing test1': {
+    topic: test1.test(2),
+    'test should pass': function (result) {
       assert.isNumber(result);
       assert.equal(result, 5);
     }
