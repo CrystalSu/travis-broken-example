@@ -3,7 +3,7 @@ language: node_js
 # test on the following node.js versions: 
 node_js:
   - 0.6
-  - 0.8
+  - 6.9.5
 
 notifications:
   slack: ibm-cloudplatform:wcpQETQr49Yx3hFDoe6SDwc5
