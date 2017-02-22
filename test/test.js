@@ -1,14 +1,22 @@
 var assert = require('assert'),
     vows = require('vows'),
     test1 = require('./test1');
+    test2 = require('./test2');
 
 vows.describe('test').addBatch({
   'When performing test1': {
     topic: test1.test(2),
-    'test should pass': function (result) {
+    'test is expected to pass': function (result) {
       assert.isNumber(result);
       assert.equal(result, 5);
     }
-  }
+  },
+  'When performing test2': {
+	    topic: test1.test(3),
+	    'test is expected to fail': function (result) {
+	      assert.isNumber(result);
+	      assert.equal(result, 5); // expected result is 8
+	    }
+	  }
 }).export(module);
 
