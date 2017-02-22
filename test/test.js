@@ -5,10 +5,10 @@ var assert = require('assert'),
 
 vows.describe('test').addBatch({
   'When performing serious calculations': {
-    topic: lib.performSeriousCalculations(4),
+    topic: test1.plus_one(4),
     'result should be valid': function (result) {
       assert.isNumber(result);
-      assert.equal(result, 8);
+      assert.equal(result, 5);
     }
   }
 }).export(module);
