@@ -15,7 +15,7 @@ vows.describe('test').addBatch({
 	    topic: test2.test(3),
 	    'test is expected to fail': function (result) {
 	      assert.isNumber(result);
-	      assert.equal(result, 8); // expected result is 8
+	      assert.equal(result, 9); // expected result is 8
 	    }
 	  }
 }).export(module);
