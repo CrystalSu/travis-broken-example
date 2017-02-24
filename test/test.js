@@ -3,7 +3,7 @@ var assert = require('assert'),
     test1 = require('./test1'),
     test2 = require('./test2');
 
-vows.describe('tests').addBatch({
+vows.describe('test').addBatch({
   'When performing test1': {
     topic: test1.test(2),
     'test is expected to pass': function (result) {
